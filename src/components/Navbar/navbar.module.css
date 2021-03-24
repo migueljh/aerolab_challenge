@@ -1,0 +1,66 @@
+.navbarContainer{
+    background-color: white;
+    height: 55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);;
+}
+
+.upperNav{
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.aerolabLogo{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.textNav{
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 23px;
+}
+
+.upperEl{
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pointCounter{
+    background-color: #ececec;
+    border-radius: 11px;
+    height: 40px;
+    /* width: 110px; */
+    margin-left: 20px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.iconCoin{
+    width: 25px;
+    margin-left: 5px;
+    display: flex;
+    margin-top: 4px;
+}
+
+.textCounter{
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .navbarContainer{
+        width: 100%;
+    }
+    .pointCounter{
+        margin-right: 15px;
+    }
+    .aerolabLogo{
+        margin-left: 20px;
+    }
+}

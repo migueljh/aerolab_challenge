@@ -1,0 +1,18 @@
+.tableContainer{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tableContainer h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .tableContainer{
+        width: 100%
+    }
+    .paginationDiv{
+        margin-left: -60px;
+    }
+}

@@ -1,0 +1,158 @@
+.dropdownContainer{
+    z-index: 9999;
+    position: absolute;
+    animation: anim_dropdown 1s forwards;
+}
+
+.dropdownContainer ul {
+    list-style: none;
+    margin-left: -120px;  
+    background-color: white;  
+    height: 100px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 10px -2px rgba(0, 0, 0, 1);
+    border: 0.5px solid rgba(15, 11, 11, 0.21);
+    animation: anim_list 1s forwards;
+}
+
+.dropdownContainer ul li{
+    margin-left: -40px;
+}
+
+.dropdownContainer p {
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+    color: transparent;
+    animation: anim_text 3s forwards;
+}
+
+
+.modalContainer{
+    background-color: white;
+    width: 240px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 10px -2px rgba(0, 0, 0, 1);
+    border: 0.5px solid rgba(15, 11, 11, 0.21);
+    position: absolute;
+    margin-left: -550px;
+    transition: 1s ease-in;
+    animation: anim_modal 1.5s forwards;
+    border-radius: 10px;
+}
+
+.modalContainer ul {
+    list-style: none;
+    margin-top: -10px;
+    margin-left: -20px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.modalContainer li {
+    cursor: pointer;
+    margin-top: 14px;
+    color: rgba(15, 11, 11, 0.91)
+}
+
+
+.modalContainer ul a  {
+    text-decoration: none;
+}
+
+.chargeBtn{
+    background-color: #53ad48;
+    border-radius: 11px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 80px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alertPoints{
+    animation: anim_alert 1s forwards;
+    position: absolute;
+  }
+  
+  @keyframes anim_alert{
+    from{
+      margin-left: 100%
+    }
+    to{
+      margin-left: -85%;
+      margin-top: -150px;
+    }
+  }
+
+@keyframes anim_modal{
+    from{
+        margin-top: -1000%
+    }
+    to{
+        margin-top: 0%
+    }
+}
+
+@keyframes anim_dropdown{
+    from{
+        margin-top: 0%;
+    }
+    to{
+        margin-top: 10px;
+    }
+}
+
+@keyframes anim_list{
+    from{
+        margin-top: 8px;
+        height: 0px;
+    }
+    to{
+        margin-top: 10px;
+        height: 100px;
+    }
+}
+
+@keyframes anim_text{
+    from{
+        color: transparent
+    }
+    to{
+        color: black
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modalContainer{
+        margin-left: -170px;
+    }
+   .modalContainer ul{
+       margin-left: 10px;
+   }
+   @keyframes anim_alert{
+    from{
+      margin-left: 100%
+    }
+    to{
+      margin-left: -40%;
+      margin-top: -150px;
+    }
+  }
+}
+    

@@ -1,0 +1,27 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.pageLink{
+    background-color: white !important;
+    color:black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pageLink p {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.pagination ul{
+    list-style: none;
+}
+
+.pageActive{
+    color: black 
+}
+
+

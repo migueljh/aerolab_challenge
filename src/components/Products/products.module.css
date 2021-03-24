@@ -1,0 +1,199 @@
+.productCard {
+  height: 283px;
+  width: 240px;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  margin-left: 30px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(1);
+  transition: 0.9s;
+}
+
+.productCardImg {
+  height: 180px;
+}
+
+.lineHorizontalProduct {
+  background-color: rgba(15, 11, 11, 0.21);
+  height: 2px;
+  width: 220px;
+  margin-left: 9px;
+}
+
+.productCardTextTitle {
+  font-size: 14px;
+  margin-top: 23px;
+  margin-left: 28px;
+  color: rgba(15, 11, 11, 0.4);
+}
+
+.productCardTextSubtitle {
+  font-size: 18px;
+  margin-left: 28px;
+  margin-top: -10px;
+  color: rgba(15, 11, 11, 0.55);
+}
+
+.textAvailable {
+  font-size: 14px;
+  margin-left: 28px;
+  margin-top: -12px;
+  color: rgba(15, 11, 11, 0.55);
+}
+
+.circleShopping {
+  position: absolute;
+  background: url("../../media/assets/icons/buy-blue.svg") no-repeat;
+  width: 42px;
+  height: 42px;
+  margin-top: -220px;
+  margin-left: 190px;
+}
+
+.circleShopping:hover {
+  display: none;
+}
+
+.circleShoppingHover {
+  background: url("../../media/assets/icons/buy-white.svg") no-repeat;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  margin-top: -220px;
+  margin-left: 180px;
+}
+
+.circleShoppingHoverNotAvailable {
+  background: url("../../media/assets/icons/buy-red.svg") no-repeat;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  margin-top: -224px;
+  margin-left: 180px;
+}
+
+.productCard:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.curtain {
+  height: 283px;
+  width: 240px;
+  background-color: transparent;
+  margin-top: -272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s ease-in;
+}
+
+.curtain:hover {
+  background-color: #73dcec;
+  opacity: 0.9;
+  transition: 0.5s ease-in;
+}
+
+.curtainNotAvailable {
+  height: 283px;
+  width: 240px;
+  background-color: transparent;
+  margin-top: -272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s ease-in;
+}
+
+.notAvailableText {
+  color: #fc5d5d;
+  margin-top: 5px;
+  margin-left: 28px;
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: -20px;
+}
+
+.curtainNotAvailable:hover {
+  background-color: #f87b7b;
+  opacity: 0.9;
+  transition: 0.5s ease-in;
+}
+
+.curtainNotAvailable p {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+.curtain p {
+  color: white;
+  font-size: 24px;
+}
+
+.iconCoin {
+  margin-left: 0px;
+  margin-top: -18px;
+  flex-wrap: wrap;
+}
+
+.iconCoinNA {
+  margin-left: 0px;
+  margin-top: -18px;
+}
+
+.btnRedeem {
+  height: 42px;
+  width: 226px;
+  border-radius: 20px;
+  color: black;
+  background: white;
+  border: none;
+  opacity: 2;
+  cursor: pointer;
+}
+
+.btnRedeem::after {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .circleShopping {
+    margin-top: -110px;
+    margin-left: 240px;
+  }
+  .circleShoppingHover {
+    margin-top: -110px;
+    margin-left: 110px;
+  }
+  .circleShoppingHoverNotAvailable {
+    margin-top: -110px;
+    margin-left: 110px;
+  }
+  .productCard {
+    width: 303px;
+    margin-left: -20px;
+    height: 290px;
+    padding: 0px !important;
+  }
+  .curtain {
+    width: 303px;
+    height: 290px;
+  }
+  .curtainNotAvailable {
+    width: 303px;
+    height: 290px;
+  }
+
+.lineHorizontalProduct {
+  width: 250px;
+  margin-left: 26px;
+}
+}

@@ -1,0 +1,25 @@
+.banner{
+    height: 417px;
+    width: 100%;
+}
+
+.textBanner{
+    position: absolute;
+    font-size: 48px;
+    top: 60%;
+    margin-left: 200px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 800px) {
+    .textBanner{
+        margin-left: 10px;
+        top: 200px;
+        font-size: 34px;
+    }
+    .banner{
+        height: 200px;
+    }
+}
